@@ -18,6 +18,21 @@ This project aims to implement a linear classification model, as a continuation 
 4. Train a logistic regression that will solve classification problem
 5. Ensure the algorithm chosen has a minimum precision of 98%
 
+## Data Analysis
+1. [Five number summary](https://en.wikipedia.org/wiki/Five-number_summary)
+`python .\describe.py .\dataset\dataset_train.csv`
+<p align="center">
+  <img src="resources/Screenshot_109.png"/>
+</p>
+
+2. [Histogram](https://statisticsbyjim.com/basics/histograms/)
+`python .\histogram.py .\dataset\dataset_train.csv`
+<p align="center">
+  <img src="resources/Screenshot_108.png"/>
+</p>
+
+## Logistic Regression
+
 ## Topics covered
 * Statistics
 * Predictive Analysis
