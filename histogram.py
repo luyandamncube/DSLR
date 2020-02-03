@@ -1,15 +1,12 @@
 import sys
-from describe import describe, readData
+from describe import describe
+from helpers import readData, filterHouse
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Graph plotting
 ROWS = 3
 COLUMNS = 5
-
-def filterHouse(df, rowName, value):
-    temp_df = df.loc[df[rowName] == value]
-    return(temp_df)
 
 def plotData(df, courseName, row, column):
     global fig  
@@ -65,8 +62,11 @@ if __name__ == "__main__":
         rows=ROWS, cols=COLUMNS,
         subplot_titles=titles,
         specs=[
+                # row 1 
                 [{"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True},{"secondary_y": True} ],
+                # row 2 
                 [{"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True},{"secondary_y": True} ],
+                # row 3 
                 [{"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True}, {"secondary_y": True},{"secondary_y": True} ]   
             ])
     r = 1
@@ -78,6 +78,5 @@ if __name__ == "__main__":
             plotData(df, titles[index], r, c)
             c += 1 
             index += 1
-            print(f'index: {index} | c: {c}')
         r += 1   
     fig.show()
