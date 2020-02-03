@@ -31,6 +31,16 @@ This project aims to implement a linear classification model, as a continuation 
   <img src="resources/Screenshot_108.png"/>
 </p>
 
+From the above, both 'Arithmancy' and 'Care of Magical Creatures' have homogenous score distributions  
+
+3. [Scatter Plot](https://en.wikipedia.org/wiki/Scatter_plot)
+`python .\scatter_plot.py .\dataset\dataset_train.csv`
+<p align="center">
+  <img src="resources/Screenshot_110.png"/>
+</p>
+
+From the above, the two feautures that are similar are 'Defense Against the Dark Arts' & 'Astronomy'. These will be the feautures selected to perform the Logistic Regression.
+
 ## Logistic Regression
 
 ## Topics covered
